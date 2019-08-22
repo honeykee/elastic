@@ -35,10 +35,5 @@ public class UserService implements ApplicationContextAware {
         applicationContext.publishEvent( new UserRegisterEvent(this, user ) );
     }
 
-    public void test(){
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor( 10,20,
-                10, TimeUnit.SECONDS,new ArrayBlockingQueue<>( 10 ) );
-        Executors.newFixedThreadPool(10);
-    }
 
 }
